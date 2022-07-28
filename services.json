@@ -1,0 +1,5 @@
+{
+    "mysql_service": "running",
+    "apache2_service": "running",
+    "redis_service": "running"
+}

@@ -31,9 +31,12 @@
             $mysql = $json['mysql_service'];
             $redis = $json['redis_service'];
             $apache = $json['apache2_service'];
-            ?> <li class="<?= $mysql == 'running' ? 'running' : 'not_running' ?>"><?= $mysql == 'running' ? 'Database(mysql) service is running' : 'Database(mysql) service is not running'?>
-            ?> <li class="<?= $redis == 'running' ? 'running' : 'not_running' ?>"><?= $mysql == 'running' ? 'Redis service is running' : 'Redis service is not running'?></li> <?php
-            ?> <li class="<?= $apache == 'running' ? 'running' : 'not_running' ?>"><?= $mysql == 'running' ? 'Apache service is running' : 'Apache service is not running'?></li> <?php
+            ?> <li class="<?= $mysql == 'running' ? 'running' : 'not_running' ?>">
+                <?= $mysql == 'running' ? 'Database(mysql) service is running' : 'Database(mysql) service is not running'?>
+            ?> <li class="<?= $redis == 'running' ? 'running' : 'not_running' ?>">
+                <?= $redis == 'running' ? 'Redis service is running' : 'Redis service is not running'?></li> <?php
+            ?> <li class="<?= $apache == 'running' ? 'running' : 'not_running' ?>">
+                <?= $apache == 'running' ? 'Apache service is running' : 'Apache service is not running'?></li> <?php
             ?>
         </ul>
     </body>
